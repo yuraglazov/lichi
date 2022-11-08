@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Helper\Fibonacci;
 
-class fibonacciController extends Controller
+class FibonacciController extends Controller
 {
     public function index()
     {

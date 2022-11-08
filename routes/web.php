@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\fibonacciController;
+use App\Http\Controllers\FibonacciController;
+use App\Http\Controllers\RangeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,5 @@ use App\Http\Controllers\fibonacciController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/fibonacci', [fibonacciController::class, 'index'])->name('fibonacci');
+Route::get('/fibonacci', [FibonacciController::class, 'index'])->name('fibonacci');
+Route::get('/range', [RangeController::class, 'index'])->name('range');

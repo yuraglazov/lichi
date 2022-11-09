@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FibonacciController;
 use App\Http\Controllers\RangeController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::get('/', function () {
 });
 Route::get('/fibonacci', [FibonacciController::class, 'index'])->name('fibonacci');
 Route::get('/range', [RangeController::class, 'index'])->name('range');
+Route::get('/get', [TestController::class, 'index'])->name('get');
+Route::get('/fill', [TestController::class, 'fill']);

@@ -1,7 +1,11 @@
 @extends('layout')
 @section('content')
-    <ul class="container">
-        <li><a href="{{route('fibonacci')}}">Задание 1</a></li>
-        <li><a href="{{route('range')}}">Задание 2</a></li>
-    </ul>
+    <div class="container">
+        <ul class="list-group mt-5">
+            <li class="list-group-item"><a href="{{route('fibonacci')}}">Задание 1</a></li>
+            <li class="list-group-item"><a href="{{route('range')}}">Задание 2</a></li>
+            <li class="list-group-item"><a href="{{route('get')}}">Задание 3</a></li>
+        </ul>
+    </div>
+
 @endsection

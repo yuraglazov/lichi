@@ -1,4 +1,6 @@
 @extends('layout')
 @section('content')
-    Сумма: {{$sum}}
+    <div class="container">
+        Сумма: <strong>{{$sum}}</strong>
+    </div>
 @endsection

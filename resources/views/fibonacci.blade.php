@@ -1,4 +1,6 @@
 @extends('layout')
 @section('content')
-    Сумма чисел Фибоначчи: {{$sum}}
+    <div class="container">
+        Сумма чисел Фибоначчи:  <strong>{{$sum}}</strong>
+    </div>
 @endsection

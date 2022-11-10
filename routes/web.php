@@ -5,6 +5,7 @@ use App\Http\Controllers\FibonacciController;
 use App\Http\Controllers\RangeController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::get('/range', [RangeController::class, 'index'])->name('range');
 Route::get('/get', [TestController::class, 'index'])->name('get');
 Route::get('/fill', [TestController::class, 'fill']);
 Route::get('/shop', [ShopController::class, 'index'])->name('shop');
+Route::get('/form', [FormController::class, 'index'])->name('form');
+Route::post('/ajax-request', [FormController::class, 'form']);
